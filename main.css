@@ -1,0 +1,84 @@
+.box-shape:hover {
+    box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.05),
+        0 20px 48px hsla(0, 0%, 0%, 0.05),
+        0 1px 4px hsla(0, 0%, 0%, 0.1);
+    transition: all 200ms;
+}
+
+.wave-blue-image {
+    position: absolute;
+    z-index: 300;
+    bottom: 20px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+.box-shape:hover .wave-blue-image {
+    opacity: 1;
+}
+
+.box-shape-2:hover {
+    box-shadow: 0 10px 40px hsla(0, 0%, 0%, 0.3),
+        0 20px 48px hsla(0, 0%, 0%, 0.3),
+        0 1px 4px hsla(0, 0%, 0%, 0.3)
+}
+
+
+/* media quary */
+@media (max-width:700px) {
+    .feature-section-2 {
+        padding-bottom: 200px;
+    }
+}
+
+@media (max-width:1024px) {
+    .navigation-section {
+        width: 100vw;
+    }
+
+    .logo{
+        margin-left: 40px;
+    }
+    .icon-nav{
+        margin-right: 40px;
+    }
+
+     .nav-links{
+        position: absolute;
+        flex-direction: column;
+        top: 80px;
+        right: -100%;
+        background-color: black;
+        width: 100%;
+        z-index: 100;
+        text-align: center;
+        padding-bottom: 10rem;
+        transition: 0.2s ease-in-out;
+        padding-top: 3rem;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+    }
+
+    .nav-links.active {
+        right: 0;
+    } 
+
+    .nav-toggle{
+        margin-right: 40px;
+        transition: transform .7s ease-in-out;
+    }
+
+    .nav-toggle:hover{
+        transform: rotate(360deg);
+    }
+
+
+    
+
+
+   
+
+}
